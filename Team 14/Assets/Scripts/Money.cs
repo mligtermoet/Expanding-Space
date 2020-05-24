@@ -18,7 +18,7 @@ public class Money : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moneyText.text = "€" + (int)moneyAmount;
+        moneyText.text = "@   " + (int)moneyAmount;
         moneyAmount += moneyIncreasedPerSecond * Time.deltaTime;
     }
 }

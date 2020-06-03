@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CamaraFollower
     - DropOff
     - EnergyStation
     - Inventory
@@ -80,31 +81,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10324}
     - Class: 114
-      Script: {instanceID: 10648}
+      Script: {instanceID: 10512}
     - Class: 114
-      Script: {instanceID: 10668}
+      Script: {instanceID: 10642}
     - Class: 114
-      Script: {instanceID: 10998}
+      Script: {instanceID: 10652}
     - Class: 114
-      Script: {instanceID: 11122}
+      Script: {instanceID: 10672}
     - Class: 114
-      Script: {instanceID: 11128}
+      Script: {instanceID: 10738}
     - Class: 114
-      Script: {instanceID: 11498}
+      Script: {instanceID: 11004}
     - Class: 114
-      Script: {instanceID: 11500}
+      Script: {instanceID: 11080}
     - Class: 114
-      Script: {instanceID: 16678}
+      Script: {instanceID: 11130}
     - Class: 114
-      Script: {instanceID: 16680}
+      Script: {instanceID: 11136}
     - Class: 114
-      Script: {instanceID: 16682}
+      Script: {instanceID: 11402}
     - Class: 114
-      Script: {instanceID: 25256}
+      Script: {instanceID: 11486}
     - Class: 114
-      Script: {instanceID: 27172}
+      Script: {instanceID: 11510}
     - Class: 114
-      Script: {instanceID: 30106}
+      Script: {instanceID: 11512}
+    - Class: 114
+      Script: {instanceID: 37408}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -336,6 +339,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 19e025e2bc0bba7fc9d09b4701805636
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProcessEnergy
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -354,6 +363,12 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 17a2583886ab1ad61b51a2b2d0db1d0e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WaterStation
+  - hash:
+      serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -364,6 +379,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 4b6aa14aa90631655a9ba6c39db2cc83
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DropOff
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -432,6 +453,12 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 17a2583886ab1ad61b51a2b2d0db1d0e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnergyStation
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -474,6 +501,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 4fa802c945f42aa24057ecf20851cb67
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Inventory
+  - hash:
+      serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -514,6 +547,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 6a44a81554270cce83e0d8719c6fadfb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProcessWater
   - hash:
       serializedVersion: 2
       Hash: 20eeaeae829475b5e354d1f626c51a2b
@@ -570,40 +609,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 82ff41b73f8035d491f3bd663c53361f
+      Hash: 7074f028ccc903f47eaa642e4bf8cc13
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: WaterStation
-  - hash:
-      serializedVersion: 2
-      Hash: 64180080094b86642be2908cdc15b84b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Inventory
-  - hash:
-      serializedVersion: 2
-      Hash: 6a44a81554270cce83e0d8719c6fadfb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ProcessWater
-  - hash:
-      serializedVersion: 2
-      Hash: 82ff41b73f8035d491f3bd663c53361f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnergyStation
-  - hash:
-      serializedVersion: 2
-      Hash: 19e025e2bc0bba7fc9d09b4701805636
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ProcessEnergy
-  - hash:
-      serializedVersion: 2
-      Hash: 8f1ad65719fc192f9d099d99ef05635c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DropOff
+    className: CamaraFollower
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

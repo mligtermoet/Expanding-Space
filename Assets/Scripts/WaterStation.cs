@@ -13,7 +13,7 @@ public class WaterStation : MonoBehaviour
     public bool isRunning = false;
     public bool isReady = false;
 
-    [SerializeField] private Text text;
+    
     
     [SerializeField] private GameObject animation;
 
@@ -50,11 +50,11 @@ public class WaterStation : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.E) && playerInArea == true && isRunning == false && isReady == true){
-            if (inv.inv[0] == "Empty"){
-                inv.inv[0] = "Water";
-                text.text = "Water";
+            if (inv.inv == "Empty"){
+                inv.inv = "Water";
+                
                 isReady = false;
-            }
+            } 
             
         }
         if (isReady == true){

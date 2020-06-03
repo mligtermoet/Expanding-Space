@@ -13,7 +13,7 @@ public class EnergyStation : MonoBehaviour
     public bool isRunning = false;
     public bool isReady = false;
 
-    [SerializeField] private Text text;
+    
     
     [SerializeField] private GameObject animation;
 
@@ -50,9 +50,9 @@ public class EnergyStation : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.E) && playerInArea == true && isRunning == false && isReady == true){
-            if (inv.inv[2] == "Empty"){
-                inv.inv[2] = "Energy";
-                text.text = "Energy";
+            if (inv.inv == "Empty"){
+                inv.inv = "Energy";
+                
                 isReady = false;
             }
             

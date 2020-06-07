@@ -9,6 +9,7 @@ public class EnergyStation : MonoBehaviour
 {
     
     [SerializeField] private GameObject sprite;
+    [SerializeField] private GameObject isReadytext;
     [SerializeField] private bool playerInArea = false;
     public bool isRunning = false;
     public bool isReady = false;
@@ -29,13 +30,20 @@ public class EnergyStation : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        sprite.active = true;
+        if(isReady == false && isRunning == false){
+            sprite.active = true;
+        }
+        if(isReady== true && isRunning == false){
+            isReadytext.active = true;
+        }        
+        
         playerInArea = true;
     }
 
     void OnTriggerExit(Collider other)
     {
         sprite.active = false;
+        isReadytext.active = false;
         playerInArea = false;
     }
 
@@ -47,18 +55,24 @@ public class EnergyStation : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && playerInArea == true && isRunning == false && isReady == false){
             isRunning = true;
             animation.active = true;
+            sprite.active = false;
         }
 
         if (Input.GetKeyDown(KeyCode.E) && playerInArea == true && isRunning == false && isReady == true){
             if (inv.inv == "Empty"){
                 inv.inv = "Energy";
-                
+                isReadytext.active = false;
+                sprite.active = true;
                 isReady = false;
             }
             
         }
         if (isReady == true){
             ready.active = true;
+            if(playerInArea == true){
+                isReadytext.active = true;
+            }
+            
         } else {
             ready.active = false;
         }

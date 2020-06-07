@@ -12,7 +12,7 @@ public class Money : MonoBehaviour
     void Start()
     {
         moneyAmount = 0f;
-        moneyIncreasedPerSecond = 0.5f;
+        moneyIncreasedPerSecond = 0.0f;
     }
 
     // Update is called once per frame

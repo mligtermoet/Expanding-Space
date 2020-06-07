@@ -9,6 +9,8 @@ public class DropOff : MonoBehaviour
     [SerializeField] private GameObject sprite;
     [SerializeField] private Inventory inv;
 
+    [SerializeField] private Money money;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +33,7 @@ public class DropOff : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && playerInArea == true){
             inv.inv = "Empty";
-            
+            money.moneyAmount += 50;
         }
     }
 }

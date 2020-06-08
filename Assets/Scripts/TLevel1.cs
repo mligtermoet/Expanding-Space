@@ -24,4 +24,10 @@ public class TLevel1 : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void Load4()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
 }

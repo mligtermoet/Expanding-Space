@@ -1,5 +1,17 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Main Menu.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Tutorial_Level_02.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Tutorial_Level_02.unity
+=======
+- path: Assets/Scenes/Tutorial_Level_01.unity
+>>>>>>> ca83cf935643099b4c4fab9e418cd8d57e8b5db1
+>>>>>>> 0ad2411dbb092e3ba3185b790bb98542eabeec51
+>>>>>>> c7fbdd0f87553556829ea500302812363a0e7308
   isLoaded: 1
   isActive: 1
   isSubScene: 0

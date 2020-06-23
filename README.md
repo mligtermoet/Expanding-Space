@@ -1,10 +1,12 @@
 # Expanding-Space
 
 ### Developers:
-- Milan Ligtermoet
-  * Movement
-  * Recource Productivty
-  * Damage System
+
+#### Milan Ligtermoet
+  - Milan Ligtermoet
+  - Movement
+  - Recource Productivty
+  - Damage System
 * Diego Ramon
   * Movement
   * Menu's
@@ -15,6 +17,8 @@
   * Item Delivery
   * Characters
   * Tutorial
+  
+___
 
 ### Artists:
 * Wessel Cramer

@@ -6,15 +6,16 @@ public class SchadeActivator : MonoBehaviour
 {
     [SerializeField] private GameObject[] SchadeRuimtes;
     public float Countdown;
-    private float timer;
-    [SerializeField] public GameObject[] Generators;
-    [SerializeField] private GameObject Schadetext;
-    [SerializeField]public  bool isActive = false;
+    [SerializeField]private float timer;
+    [SerializeField]public GameObject[] Generators;
+    
+    [SerializeField]public bool isActive = false;
 
 
     void Start()
     {
-        Countdown = Random.Range(20.0f,100.0f);
+        // Countdown = Random.Range(10.0f,30.0f);
+        isActive = true;
     }
 
     public void ActivateGenerators()
@@ -23,7 +24,7 @@ public class SchadeActivator : MonoBehaviour
         {
             Generators[i].SetActive(true);
         }
-        Schadetext.SetActive(false);
+        
     }
 
     public void DeactivateGenerators()
@@ -32,7 +33,7 @@ public class SchadeActivator : MonoBehaviour
         {
             Generators[i].SetActive(false);
         }
-        Schadetext.SetActive(true);
+        
     }
 
     // Update is called once per frame

@@ -21,6 +21,8 @@ public class WaterStation : MonoBehaviour
     [SerializeField] private Inventory inv;
     [SerializeField] private GameObject ready;
 
+    public AudioSource Water;
+
 
     
     // Start is called before the first frame update
@@ -55,6 +57,7 @@ public class WaterStation : MonoBehaviour
             isRunning = true;
             sprite.active = false;
             animation.active = true;
+            Water.Play();
         }
 
         if (Input.GetKeyDown(KeyCode.E) && playerInArea == true && isRunning == false && isReady == true){
@@ -69,6 +72,7 @@ public class WaterStation : MonoBehaviour
             ready.active = true;
             if(playerInArea == true){
                 isReadytext.active = true;
+                Water.Stop();
             }
         } else {
             ready.active = false;

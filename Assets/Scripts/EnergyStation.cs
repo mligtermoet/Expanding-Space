@@ -21,6 +21,7 @@ public class EnergyStation : MonoBehaviour
     [SerializeField] private Inventory inv;
     [SerializeField] private GameObject ready;
 
+    public AudioSource Elec;
 
     
     // Start is called before the first frame update
@@ -56,6 +57,7 @@ public class EnergyStation : MonoBehaviour
             isRunning = true;
             animation.active = true;
             sprite.active = false;
+            Elec.Play();
         }
 
         if (Input.GetKeyDown(KeyCode.E) && playerInArea == true && isRunning == false && isReady == true){
@@ -71,6 +73,7 @@ public class EnergyStation : MonoBehaviour
             ready.active = true;
             if(playerInArea == true){
                 isReadytext.active = true;
+                Elec.Stop();
             }
             
         } else {

@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Money : MonoBehaviour
 {
+    public GameObject Panel;
     public Text moneyText;
     public float moneyAmount;
     public float moneyIncreasedPerSecond;
@@ -18,7 +20,15 @@ public class Money : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         moneyText.text = "@   " + (int)moneyAmount;
         moneyAmount += moneyIncreasedPerSecond * Time.deltaTime;
+
+        if (moneyAmount >= 1000)
+        {
+            bool isActive = Panel.activeSelf;
+
+            Panel.SetActive(true);
+        }
     }
 }

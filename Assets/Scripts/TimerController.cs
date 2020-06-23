@@ -7,20 +7,30 @@ using UnityEngine.UI;
 public class TimerController : MonoBehaviour
 {
     public Text timerText;
-    private float startTime;
+    public GameObject Lose;
+    public float startTime;
+    public float endTime;
 
     void Start()
     {
-        startTime = Time.time;
+        startTime = 595f;
+        endTime = startTime - Time.time;
     }
 
     void Update()
     {
-        float t = Time.time - startTime;
+        float t = startTime - Time.time;
 
         string minutes = ((int)t / 60).ToString("00");
         string seconds = (t % 59.5299).ToString("00");
 
         timerText.text = "Time: " + minutes + "." + seconds;
+
+        if (endTime == 0)
+        {
+            bool isActive = Lose.activeSelf;
+
+            Lose.SetActive(true);
+        }
     }
 }

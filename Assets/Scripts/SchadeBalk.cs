@@ -6,6 +6,7 @@ public class SchadeBalk : MonoBehaviour
 {
     [SerializeField]private SchadeRuimte schadeRuimte;
     private float timer;
+    public AudioSource Repair;
     
     // Start is called before the first frame update
     void Start()
@@ -20,8 +21,12 @@ public class SchadeBalk : MonoBehaviour
         timer += Time.deltaTime;
         if(timer >= 3.350f){
             timer = 0;
-            this.gameObject.SetActive(false);
+            Repair.Stop();
             schadeRuimte.ReadyToFix = true;
+            schadeRuimte.isRepairing = false;
+            this.gameObject.SetActive(false);
+            
+            
         }
     }
 }

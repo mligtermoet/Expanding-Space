@@ -1,5 +1,11 @@
 # Expanding-Space
 
+
+### DIP Achievements:
+  #### Les 1:
+    - Brainstorm  ✔️
+    - Breakdown   ❌
+    - One Page    ❌
 ### Developers:
 
 #### Milan Ligtermoet

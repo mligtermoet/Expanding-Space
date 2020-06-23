@@ -1,18 +1,13 @@
 # Expanding-Space
 
 
-### DIP Achievements:
-  #### Les 1:
-    - Brainstorm  ✔️
-    - Breakdown   ❌
-    - One Page    ❌
-### Developers:
 
-#### Milan Ligtermoet
-  - Milan Ligtermoet
-  - Movement
-  - Recource Productivty
-  - Damage System
+
+### Developers:
+* Milan Ligtermoet
+  * Movement
+  * Recource Productivty
+  * Damage System
 * Diego Ramon
   * Movement
   * Menu's

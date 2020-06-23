@@ -1,7 +1,7 @@
 # Expanding-Space
 
 ### Developers:
-* Milan Ligtermoet
+- Milan Ligtermoet
   * Movement
   * Recource Productivty
   * Damage System
